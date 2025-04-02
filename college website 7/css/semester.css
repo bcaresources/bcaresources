@@ -1,0 +1,160 @@
+/* Semester Header */
+.semester-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.semester-header h1 {
+  font-size: 36px;
+  color: #ff4444; /* Red heading */
+  margin-bottom: 10px;
+}
+
+.semester-header h2 {
+  font-size: 20px;
+  color: #ccc; /* Light gray subheading */
+}
+
+/* Subject Container */
+.subject-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Subject Cards */
+.subject-card {
+  margin-bottom: 40px;
+}
+
+.subject-card h3 {
+  font-size: 24px;
+  color: #ff4444; /* Red heading */
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Faded line */
+}
+
+/* Exam Papers List */
+.exam-papers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.exam-paper-link {
+  display: block;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Strong shadow */
+}
+
+.exam-paper-link:hover {
+  background-color: rgba(255, 68, 68, 0.2); /* Semi-transparent red */
+  border-color: #ff4444; /* Lighted border */
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+/* Not Available Styling */
+.exam-paper-link.not-available {
+  background-color: rgba(255, 255, 255, 0.05); /* Lighter background */
+  color: #ccc; /* Light gray text */
+  cursor: not-allowed; /* Disable pointer */
+}
+
+.exam-paper-link.not-available:hover {
+  background-color: rgba(255, 255, 255, 0.05); /* No hover effect */
+  border-color: rgba(255, 255, 255, 0.2); /* No border change */
+  transform: none; /* No lift effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Keep original shadow */
+}
+
+/* Bright Theme Styles */
+.bright-theme .semester-header h1 {
+  color: #007bff; /* Blue heading */
+}
+
+.bright-theme .semester-header h2 {
+  color: #333; /* Dark subheading */
+}
+
+.bright-theme .subject-card h3 {
+  color: #007bff; /* Blue heading */
+  border-bottom: 1px solid rgba(0, 123, 255, 0.2); /* Faded line */
+}
+
+.bright-theme .exam-paper-link {
+  background-color: rgba(0, 123, 255, 0.1); /* Semi-transparent blue */
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  color: #333; /* Dark text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Strong shadow */
+}
+
+.bright-theme .exam-paper-link:hover {
+  background-color: rgba(0, 123, 255, 0.2); /* Semi-transparent blue on hover */
+  border-color: #007bff; /* Lighted border */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.bright-theme .exam-paper-link.not-available {
+  background-color: rgba(0, 123, 255, 0.05); /* Lighter background */
+  color: #888; /* Gray text */
+}
+
+.bright-theme .exam-paper-link.not-available:hover {
+  background-color: rgba(0, 123, 255, 0.05); /* No hover effect */
+  border-color: rgba(0, 123, 255, 0.2); /* No border change */
+}
+
+/* Exam Paper Actions */
+.exam-paper-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.download-button,
+.preview-button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-button:hover {
+  background-color: rgba(255, 68, 68, 0.2); /* Semi-transparent red */
+  transform: translateY(-2px);
+}
+
+.preview-button:hover {
+  background-color: rgba(0, 123, 255, 0.2); /* Semi-transparent blue */
+  transform: translateY(-2px);
+}
+
+/* Bright Theme Styles */
+.bright-theme .download-button,
+.bright-theme .preview-button {
+  background-color: rgba(0, 123, 255, 0.1); /* Semi-transparent blue */
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  color: #333; /* Dark text */
+}
+
+.bright-theme .download-button:hover {
+  background-color: rgba(255, 68, 68, 0.2); /* Semi-transparent red */
+}
+
+.bright-theme .preview-button:hover {
+  background-color: rgba(0, 123, 255, 0.2); /* Semi-transparent blue */
+}

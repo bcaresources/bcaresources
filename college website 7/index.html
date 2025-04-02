@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BCA Resources</title>
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="css/global.css">
+  <!-- Homepage-specific CSS -->
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="#" class="logo">BCA Resources</a> <!-- Logo redirects to home -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Sliding Menu -->
+  <div class="sliding-menu" id="slidingMenu">
+    <div class="menu-header">
+      <span class="close-btn" id="closeMenu">&times;</span>
+    </div>
+    <!-- Search Bar inside sliding menu -->
+    <div class="menu-search-bar">
+      <input type="text" placeholder="Search..." id="menuSearchInput">
+      <button id="menuSearchButton"><i class="fas fa-search"></i></button>
+    </div>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#boxes"><i class="fas fa-book"></i> Explore Resources</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+      <li><a href="#feedback"><i class="fas fa-comment"></i> Feedback</a></li>
+      <li><a href="#contribute"><i class="fas fa-hand-holding-heart"></i> Contribute</a></li>
+    </ul>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button><i class="fas fa-search"></i></button>
+  </div>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section">
+    <div class="welcome-content">
+      <h1>Welcome to <br>BCA Resources</h1>
+      <h2>Your one-step destination for every BCA study material</h2>
+      <p>
+        BCA Resources is a platform designed specifically for students of MLSM College to access all the study materials they need for their BCA course. From syllabus and study notes to exam papers and programming resources, we’ve got you covered. Explore now to find everything you need in one place!
+      </p>
+      <a href="#boxes" class="explore-btn" id="exploreBtn">Explore Now</a>
+    </div>
+    <div class="welcome-image">
+      <img src="images/image.png" alt="BCA Resources">
+    </div>
+  </section>
+
+  <!-- Boxes Section -->
+  <section class="boxes" id="boxes">
+    <div class="box" onclick="window.open('https://drive.google.com/file/d/1-98qJsPhYHzuU8RzTjEoXmbLQXRnFd81/view', '_blank');">
+      <i class="fas fa-book"></i>
+      <h3>Syllabus</h3>
+    </div>
+  <div class="box" onclick="location.href='pages/study-material.html';">
+    <i class="fas fa-file-alt"></i>
+    <h3>Study Material</h3>
+  </div>
+  <div class="box" onclick="location.href='pages/exam-papers.html';">
+    <i class="fas fa-file-pdf"></i>
+    <h3>Exam Papers</h3>
+  </div>
+  <div class="box" onclick="location.href='pages/programs.html';">
+    <i class="fas fa-code"></i>
+    <h3>Programs</h3>
+  </div>
+  <div class="box" onclick="location.href='pages/presentations.html';">
+    <i class="fas fa-file-powerpoint"></i>
+    <h3>Presentations</h3>
+  </div>
+  <div class="box" onclick="location.href='pages/youtube.html';">
+    <i class="fab fa-youtube"></i>
+    <h3>YouTube Channels</h3>
+  </div>
+</section>
+
+  <!-- Theme Toggle Button -->
+  <button id="themeToggle" title="Toggle Theme">
+    <i class="fas fa-moon"></i> <!-- Default to dark theme (moon icon) -->
+  </button>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 BCA Resources. All rights reserved.</p>
+  </footer>
+
+  <!-- Global JavaScript -->
+  <script src="js/global.js"></script>
+  <!-- Homepage-specific JavaScript -->
+  <script src="js/index.js"></script>
+</body>
+</html>
