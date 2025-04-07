@@ -1,0 +1,147 @@
+/* Header Container */
+.header-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-container h1 {
+  font-size: 36px;
+  color: #ff4444; /* Red heading */
+  margin-bottom: 10px;
+}
+
+.header-container h2 {
+  font-size: 20px;
+  color: #ccc; /* Light gray subheading */
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Space between buttons */
+  max-width: 300px; /* Narrower container for shorter buttons */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Semester Buttons */
+.semester-button {
+  width: 230%;
+  height: 150px; /* Fixed height for taller buttons */
+  padding: 0 20px; /* Horizontal padding */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: white;
+  font-size: 24px; /* Larger text size */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between icon and text */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More intense shadow for dark theme */
+}
+
+.semester-button:hover {
+  background-color: rgba(255, 68, 68, 0.2); /* Semi-transparent red */
+  border: 1px solid #ff4444;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More intense shadow on hover for dark theme */
+}
+
+/* Icon Styling */
+.semester-button i {
+  font-size: 65px; /* Larger icon size */
+  color: #ff4444; /* Red icon */
+}
+
+/* Bright Theme Styles */
+.bright-theme .header-container h1 {
+  color: #007bff; /* Blue heading */
+}
+
+.bright-theme .header-container h2 {
+  color: #333; /* Dark subheading */
+}
+
+.bright-theme .semester-button {
+  background-color: rgba(0, 123, 255, 0.1); /* Semi-transparent blue */
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  color: #333; /* Dark text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for bright theme */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More intense shadow for bright theme */
+}
+
+.bright-theme .semester-button i {
+  color: #007bff; /* Blue icon */
+}
+
+.bright-theme .semester-button:hover {
+  background-color: rgba(0, 123, 255, 0.2); /* Semi-transparent blue on hover */
+  border: 1px solid #007bff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More intense shadow on hover for bright theme */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .header-container h1 {
+    font-size: 28px; /* Smaller heading for mobile */
+  }
+
+  .header-container h2 {
+    font-size: 16px; /* Smaller subheading for mobile */
+  }
+
+  .button-container {
+    max-width: 90%; /* Full width on mobile */
+    padding: 10px;
+  }
+
+  .semester-button {
+    width: 91%; /* Full width on mobile */
+    height: 120px; /* Slightly shorter buttons for mobile */
+    font-size: 20px; /* Smaller text for mobile */
+    gap: 15px; /* Smaller gap between icon and text */
+  }
+
+  .semester-button i {
+    font-size: 50px; /* Smaller icon for mobile */
+  }
+}
+
+
+/* Drive Embed Container */
+.drive-embed-container {
+  margin: 20px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Subject-wise embeds */
+.resource-embed {
+  margin-top: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Bright Theme Adjustments */
+.bright-theme .resource-embed {
+  border-color: rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .drive-embed-container {
+    margin: 10px;
+  }
+  
+  .resource-embed iframe {
+    height: 300px;
+  }
+}
