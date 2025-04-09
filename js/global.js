@@ -47,14 +47,30 @@ menuSearchInput.addEventListener("keypress", (e) => {
   }
 });
 
-// Theme Toggle Button
-const themeToggle = document.getElementById("themeToggle");
-const body = document.body;
 
-themeToggle.addEventListener("click", () => {
-  body.classList.toggle("bright-theme");
-  const isBrightTheme = body.classList.contains("bright-theme");
-  themeToggle.innerHTML = isBrightTheme ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+// theme change logic
+document.addEventListener('DOMContentLoaded', function() {
+  const themeToggle = document.getElementById('themeToggle');
+  const body = document.body;
+
+  // Check saved theme from localStorage
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'bright') {
+    body.classList.add('bright-theme');
+    themeToggle.innerHTML = '<i class="fas fa-sun"></i>'; // Update icon
+  }
+
+  // Toggle theme on button click
+  themeToggle.addEventListener('click', function() {
+    body.classList.toggle('bright-theme');
+    const isBright = body.classList.contains('bright-theme');
+
+    // Save to localStorage
+    localStorage.setItem('theme', isBright ? 'bright' : 'dark');
+
+    // Update icon
+    themeToggle.innerHTML = isBright ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+  });
 });
 
 // Back to Top Button
