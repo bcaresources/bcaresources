@@ -99,6 +99,24 @@ const linuxImages = [
     "https://drive.google.com/thumbnail?id=17SeGHBh-blDaZP6rJkx6pPk8HGBSF0jd&sz=s800"
 ];
 
+const computerGenerationsImages = [
+    "https://drive.google.com/thumbnail?id=18ZuELAn7mYGJh44WTfvWiCvntcm-XCQK&sz=s800",
+    "https://drive.google.com/thumbnail?id=19gXq4x5UgDQf0Mv6Whshax9-b5mafr47&sz=s800",
+    "https://drive.google.com/thumbnail?id=19g1ezvlfKGXUkeGNX9VfsWy-oxNiHuPl&sz=s800",
+    "https://drive.google.com/thumbnail?id=19e_zVQamRsA0N3V_qEB6-ZYc-SYESf5l&sz=s800",
+    "https://drive.google.com/thumbnail?id=19bc0rVBJY3oRMSWhVUWIZLoGNQVE-frf&sz=s800",
+    "https://drive.google.com/thumbnail?id=19ULOi8dJhc2PB93boVoY7QAYGZxXn8z7&sz=s800",
+    "https://drive.google.com/thumbnail?id=19Dts5YHO11CVnAdTqF5rB9AKuZUubRLK&sz=s800",
+    "https://drive.google.com/thumbnail?id=193odX_tqkuMN2H3K3thtZzc-IpREZgmY&sz=s800",
+    "https://drive.google.com/thumbnail?id=193_ievbzktpjR7v8BVBT7DdKfudtkrwB&sz=s800",
+    "https://drive.google.com/thumbnail?id=1910Q0fZWjnsEH3n3DeORiVrcuoz4he3A&sz=s800",
+    "https://drive.google.com/thumbnail?id=18iEWV9oodY5-uEdaGdHC4MBIH8osO1Px&sz=s800",
+    "https://drive.google.com/thumbnail?id=18hZVo1qz7TqeOwTrEtCkfdAxeNHDrqDE&sz=s800",
+    "https://drive.google.com/thumbnail?id=18dNjN-AsXoxV8MHvSvSrMb383gVnbyR6&sz=s800",
+    "https://drive.google.com/thumbnail?id=18cKxN9UGjkQaYphCYMMb6_bLG6WvfYnu&sz=s800"
+];
+
+
 // Open Modal
 function openModal(presentationType, downloadLink) {
     const modal = document.getElementById("presentationModal");
@@ -115,6 +133,8 @@ function openModal(presentationType, downloadLink) {
         imageLinks = chatGPTImages;
     } else if (presentationType === "linux") {
         imageLinks = linuxImages;
+    } else if (presentationType === "computerGenerations") {
+        imageLinks = computerGenerationsImages;
     }
 
     // Set download link
