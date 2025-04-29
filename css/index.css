@@ -114,10 +114,10 @@
   /* Boxes Section */
   .boxes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three boxes per row */
+    grid-template-columns: repeat(2, 1fr); /* 2 boxes per row */
     gap: 20px;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1225px; /*width of box*/
     margin: 0 auto;
   }
   
