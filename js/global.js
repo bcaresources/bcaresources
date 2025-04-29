@@ -28,24 +28,24 @@ function closeSlider() {
 }
 
 // Search Functionality for Sliding Menu
-const menuSearchButton = document.getElementById("menuSearchButton");
-const menuSearchInput = document.getElementById("menuSearchInput");
+// const menuSearchButton = document.getElementById("menuSearchButton");
+// const menuSearchInput = document.getElementById("menuSearchInput");
 
-menuSearchButton.addEventListener("click", () => {
-  const searchTerm = menuSearchInput.value.trim();
-  if (searchTerm) {
-    alert("You searched for: " + searchTerm); // Replace with actual search logic
-  } else {
-    alert("Please enter a search term.");
-  }
-});
+// menuSearchButton.addEventListener("click", () => {
+//   const searchTerm = menuSearchInput.value.trim();
+//   if (searchTerm) {
+//     alert("You searched for: " + searchTerm); // Replace with actual search logic
+//   } else {
+//     alert("Please enter a search term.");
+//   }
+// });
 
-// Optional: Add Enter key functionality
-menuSearchInput.addEventListener("keypress", (e) => {
-  if (e.key === "Enter") {
-    menuSearchButton.click(); // Trigger search on Enter key
-  }
-});
+// // Optional: Add Enter key functionality
+// menuSearchInput.addEventListener("keypress", (e) => {
+//   if (e.key === "Enter") {
+//     menuSearchButton.click(); // Trigger search on Enter key
+//   }
+// });
 
 
 // theme change logic

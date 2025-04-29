@@ -7,28 +7,28 @@ document.getElementById("exploreBtn").addEventListener("click", (e) => {
   });
   
   // Search Functionality (Example)
-const searchInput = document.getElementById("searchInput");
-const searchButton = document.querySelector(".search-bar button");
+// const searchInput = document.getElementById("searchInput");
+// const searchButton = document.querySelector(".search-bar button");
 
 // Function to handle search
-function performSearch() {
-  const searchTerm = searchInput.value.trim();
-  if (searchTerm) {
-    alert("You searched for: " + searchTerm); // Replace with actual search logic
-  } else {
-    alert("Please enter a search term.");
-  }
-}
+// function performSearch() {
+//   const searchTerm = searchInput.value.trim();
+//   if (searchTerm) {
+//     alert("You searched for: " + searchTerm); // Replace with actual search logic
+//   } else {
+//     alert("Please enter a search term.");
+//   }
+// }
 
 // Search on button click
-searchButton.addEventListener("click", performSearch);
+// searchButton.addEventListener("click", performSearch);
 
 // Search on Enter key press
-searchInput.addEventListener("keypress", (e) => {
-  if (e.key === "Enter") {
-    performSearch(); // Trigger search on Enter key
-  }
-});
+// searchInput.addEventListener("keypress", (e) => {
+//   if (e.key === "Enter") {
+//     performSearch(); // Trigger search on Enter key
+//   }
+// });
 
 // Add click event listeners to all boxes
 document.querySelectorAll('.box').forEach(box => {
