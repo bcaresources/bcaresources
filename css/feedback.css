@@ -1,0 +1,168 @@
+/* Feedback Form - Matches Your Button Styling */
+.feedback-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect like boxes */
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Bright theme adjustment */
+.bright-theme .feedback-section {
+  background: rgba(0, 123, 255, 0.1);
+  border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.feedback-section h2 {
+  text-align: center;
+  color: #ff4444; /* Red like your logo */
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.bright-theme .feedback-section h2 {
+  color: #007bff; /* Blue in light theme */
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feedback-form label {
+  color: #ffffff; /* White text */
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.bright-theme .feedback-form label {
+  color: #333; /* Dark text in light theme */
+}
+
+/* Input fields - matches your boxes */
+.feedback-form input,
+.feedback-form textarea {
+  width: 94%;
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.bright-theme .feedback-form input,
+.bright-theme .feedback-form textarea {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: #ff4444;
+  box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.2);
+}
+
+.bright-theme .feedback-form input:focus,
+.bright-theme .feedback-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.feedback-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Submit button - matches your explore button */
+.feedback-form button {
+  background: #ff4444; /* Red like your buttons */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.bright-theme .feedback-form button {
+  background: #007bff; /* Blue in light theme */
+}
+
+.feedback-form button:hover {
+  background: #cc0000; /* Darker red */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bright-theme .feedback-form button:hover {
+  background: #0056b3; /* Darker blue */
+}
+
+/* Compact Feedback Form */
+.feedback-section {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feedback-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feedback-form textarea {
+  min-height: 100px;
+  max-height: 150px;
+}
+
+/* Add fixed space above footer */
+body.feedback-page footer {
+  margin-top: 65px; /* Adjust as needed */
+}
+
+.hidden-honeypot {
+  display: none !important;
+}
+
+@media (max-width:800px) {
+    .feedback-section {
+        width : 75vw ;
+    }
+    body.feedback-page footer {
+      margin-top: 159px; /* Adjust as needed */
+    }
+    .feedback-form input,
+    .feedback-form textarea {
+        width : 67vw ;
+}
+
+/* Nuclear option to kill horizontal scroll */
+body {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+}
