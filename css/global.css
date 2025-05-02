@@ -27,14 +27,14 @@ body {
   nav .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #ff4444; /* Red logo */
+    color: #cc0000; /* Red logo */ 
     text-decoration: none; /* Remove underline */
     cursor: pointer; /* Make it look clickable */
     transition: color 0.3s;
   }
   
   nav .logo:hover {
-    color: #cc0000; /* Darker red on hover */
+    color: #ff4444; /* Darker red on hover */
   }
   
   /* Navigation Links */
