@@ -1,0 +1,110 @@
+/* Add this to your CSS file */
+.contact-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    justify-content: center;
+  align-items: center;
+  /* display: flex; */
+  min-height: 69vh; /* Full viewport height */
+  }
+
+  .contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+
+  .bright-theme .contact-card {
+    background: rgba(0, 123, 255, 0.1);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+  }
+
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .contact-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff4444;
+  }
+
+  .bright-theme .contact-icon {
+    color: #007bff;
+  }
+
+  .contact-card h3 {
+    margin: 0.5rem 0;
+    color: white;
+  }
+
+  .bright-theme .contact-card h3 {
+    color: #333;
+  }
+
+  .contact-card p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .bright-theme .contact-card p {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .contact-handle {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    color: white;
+  }
+
+  .bright-theme .contact-handle {
+    background: rgba(0, 123, 255, 0.2);
+    color: #333;
+  }
+
+  
+/* Add fixed space above footer */
+body.feedback-page footer {
+    margin-top: 87px; /* Adjust as needed */
+  }
+
+  /* Enhanced hover effects matching your site */
+.contact-card {
+    /* ... existing styles ... */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-10px); /* Increased from -5px */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    background: rgba(255, 68, 68, 0.2); /* Red tint on hover - dark theme */
+    border-color: #ff4444;
+  }
+  
+  .bright-theme .contact-card:hover {
+    background: rgba(0, 123, 255, 0.2); /* Blue tint on hover - light theme */
+    border-color: #007bff;
+  }
+  
+  /* Add glow effect on hover */
+  .contact-card:hover .contact-icon {
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+
+
+  
