@@ -1,0 +1,88 @@
+/* About Card Styles */
+/* Center the card on screen */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 69vh; /* Adjust this value as needed */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Card styles (updated for centering) */
+  .about-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 500px;
+    width: 90%;
+    margin: 0; /* Remove any existing margins */
+  }
+
+.about-card {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Reduced from 20px */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px; /* Reduced from 20px */
+        margin: 20px auto; /* Centered */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 90%;
+    
+  }
+  
+  /* .about-icon {
+    font-size: 50px;
+    color: #ff4444;
+    background: rgba(255, 255, 255, 0.1);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  } */
+  
+  .about-content h3 {
+    margin: 0 0 10px 0;
+    color: #ff4444;
+    font-size: 1.5rem;
+  }
+  
+  .about-content p {
+    margin: 0;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  /* Light Theme Adjustments */
+  .bright-theme .about-card {
+    background: rgba(0, 123, 255, 0.1);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+  }
+  
+  .bright-theme .about-icon {
+    color: #007bff;
+    background: rgba(0, 123, 255, 0.1);
+  }
+  
+  .bright-theme .about-content h3 {
+    color: #007bff;
+  }
+  
+  .bright-theme .about-content p {
+    color: #555;
+  }
+
+  /* Add fixed space above footer */
+body.feedback-page footer {
+    margin-top: 125px; /* Adjust as needed */
+  }
